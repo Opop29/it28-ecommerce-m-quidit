@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Servicet</title>
+    <title>Customer Service</title>
     <link rel="stylesheet" href="./css/customer.css">
 </head>
 <body>
     <nav>
         <div class="logo-container">
-            <p class="Logo">LOGO</p>
+            <p class="logo">LOGO</p>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Product Inventory</a></li>
-            <li><a href="payment.html">payment</a></li>
-            <li><a href="Logistics.html">Payment & Accounting</a></li>
-            <li><a href="Customer Service.html">Customer Service</a></li>
-            <li><a href="report.html">report</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="logistics.html">Payment & Accounting</a></li>
+            <li><a href="customer_service.html" class="active">Customer Service</a></li>
+            <li><a href="report.html">Report</a></li>
         </ul>
         <div class="cart">Add to Cart</div>
     </nav>
+
+    <div class="container">
+        <h1>Welcome to Customer Service</h1>
+        <p>Please feel free to contact us for any assistance or inquiries.</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
