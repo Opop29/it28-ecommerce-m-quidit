@@ -1,8 +1,13 @@
+/* logistics.css */
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f8f8;
-}nav {
+    color: #333;
+}
+
+nav {
     background-color: #333;
     padding: 20px;
     display: flex;
@@ -15,7 +20,7 @@ body {
     flex: 1;
 }
 
-.Logo {
+.logo {
     font-size: 24px;
     color: #fff;
     margin: 0;
@@ -39,7 +44,7 @@ body {
     transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
+.nav-links li a.active {
     color: #ffcc00;
 }
 
@@ -61,4 +66,55 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin-top: 20px;
+}
+
+.sidebar {
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.head h2 {
+    margin-top: 0;
+}
+
+.foot {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffa000;
+}
+
+#root {
+    padding: 20px;
+}
+
+.shipment {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.shipment h2 {
+    margin-top: 0;
 }

@@ -3,22 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Logistics</title>
     <link rel="stylesheet" href="./css/logistics.css">
 </head>
 <body>
     <nav>
         <div class="logo-container">
-            <p class="Logo">LOGO</p>
+            <p class="logo">LOGO</p>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Product Inventory</a></li>
-            <li><a href="payment.html">payment</a></li>
-            <li><a href="Logistics.html">Payment & Accounting</a></li>
-            <li><a href="Customer Service.html">Customer Service.</a></li>
-            <li><a href="report.html">report</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="logistics.html" class="active">Logistics</a></li>
+            <li><a href="Customer Service.html">Customer Service</a></li>
+            <li><a href="report.html">Report</a></li>
         </ul>
         <div class="cart">Add to Cart</div>
     </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="head">
+                <h2>Cart</h2>
+            </div>
+            <div id="cartItem">
+              
+                <p>No items in the cart.</p>
+            </div>
+            <div class="foot">
+                <h3>Total: $0.00</h3>
+                <button>Checkout</button>
+            </div>
+        </div>
+        <div id="root">
+            <h1>Welcome to Logistics</h1>
+            <p>Track your shipments and manage logistics seamlessly.</p>
+            <div class="shipment">
+                <h2>Shipment 1</h2>
+                <p>Status: In transit</p>
+                <p>Estimated Delivery: March 25, 2024</p>
+            </div>
+            <div class="shipment">
+                <h2>Shipment 2</h2>
+                <p>Status: Delivered</p>
+                <p>Delivery Date: March 18, 2024</p>
+            </div>
+          
+        </div>
+    </div>
 </body>
 </html>
