@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment Methods</title>
     <link rel="stylesheet" href="./css/payment.css">
 </head>
 <body>
@@ -14,11 +14,46 @@
         <ul class="nav-links">
             <li><a href="index.html">Product Inventory</a></li>
             <li><a href="payment.html">Payment</a></li>
-            <li><a href="logistics.html">logistics</a></li>
+            <li><a href="logistics.html">Logistics</a></li>
             <li><a href="Customer Service.html">Customer Service</a></li>
             <li><a href="report.html">Report</a></li>
         </ul>
         <div class="cart">Add to Cart</div>
     </nav>
+
+    <div class="container">
+        <h1>Payment Methods</h1>
+        <div class="payment-container">
+            <!-- Your payment methods content here -->
+            <p>Choose your payment method:</p>
+            <ul>
+                <li>Credit Card</li>
+                <li>PayPal</li>
+                <li>Bank Transfer</li>
+            </ul>
+        </div>
+        <div class="selected-product">
+            <h2>Selected Product</h2>
+            <img src="" alt="" id="selectedProductImage">
+            <p id="selectedProductTitle"></p>
+            <p id="selectedProductPrice"></p>
+        </div>
+        <button onclick="redirectToLogistics()">Proceed to Logistics</button>
+        
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const productTitle = decodeURIComponent(urlParams.get('title'));
+            const productPrice = urlParams.get('price');
+        
+            document.getElementById('selectedProductImage').src = `./image/product_${productId}.jpg`; // Replace with actual image path
+            document.getElementById('selectedProductTitle').innerText = productTitle;
+            document.getElementById('selectedProductPrice').innerText = `Price: ₱ ${productPrice}.00`;
+
+            function redirectToLogistics() {
+                window.location.href = 'logistics.html';
+            }
+        </script>
+    </div>
 </body>
 </html>

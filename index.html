@@ -18,30 +18,22 @@
             <li><a href="Customer Service.html">Customer Service</a></li>
             <li><a href="report.html">Report</a></li>
         </ul>
-        <div class="cart">Add to Cart</div>
+       
     </nav>
-    <!-- Update your HTML structure to include a modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div id="productDetails"></div>
-          <button id="buyBtn">Buy</button>
-          <button id="cancelBtn">Cancel</button>
-          <button id="addToCartBtn">Add to Cart</button>
-        </div>
-      </div>
-  
-    <hr>
+
     <div class="container">
         <div id="root"></div>
         <div class="sidebar">
-            <div class="head"><p>My Cart</p></div>
-            <div id="cartItem">Your cart is empty</div>
+            <div class="head">
+                <p>My Cart</p>
+            </div>
+            <div id="cartItemsContainer"></div>
             <div class="foot">
                 <h3>Total</h3>
                 <h2 id="total">₱ 0.00</h2>
             </div>
         </div>
+        
     </div>
     <script src="./app.js"></script>
 </body>
